@@ -35,7 +35,7 @@ class Config(object):
     
     MAX_MESSAGE_LENGTH = 4096
     
-    PROCESS_MAX_TIMEOUT = 0
+    PROCESS_MAX_TIMEOUT = 50
     
     DEF_WATER_MARK_FILE = "UploadLinkToFileBot"
     
@@ -47,7 +47,7 @@ class Config(object):
     
     LOGGER = logging
 
-    UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "")
+    UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "-1001790091614")
     
     OWNER_ID = int(os.environ.get("OWNER_ID", "763990585"))
     
